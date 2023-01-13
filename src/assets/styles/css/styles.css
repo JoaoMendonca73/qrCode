@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #89CFF0;
+}
+body .cntnr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  width: 375px;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 10px;
+  transition: 0.3s;
+}
+body .cntnr:hover {
+  box-shadow: 0 0 30px 5px #002244;
+  transition: 0.3s;
+}
+body .cntnr-img {
+  width: 98%;
+  border-radius: 10px;
+  animation: crdRot 1s infinite;
+  transition: 0.3s;
+}
+body .cntnr-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0 0 50px 30px #002244;
+  filter: contrast(500%);
+}
+@keyframes crdRot {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body .cntnr-txt {
+  padding: 1rem;
+  color: #002244;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+body .cntnr-dsc {
+  color: #909090;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.sgntr {
+  transition: 0.3s;
+}
+.sgntr a {
+  text-decoration: none;
+  color: #002244;
+  font-size: 2rem;
+}
+.sgntr:hover {
+  transform: translateY(5px) scale(1.1);
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=styles.css.map */

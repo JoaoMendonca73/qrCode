@@ -1,0 +1,68 @@
+@import './base/base'
+@import './abstract/variables'
+@import'./abstract/mixins'
+
+body
+
+    width: 100vw
+    height: 100vh
+    @include flex-center
+    background-color: $bg-clr
+
+    .cntnr
+        @include cntnr
+        padding: 1rem
+        margin: 10px
+        transition: .3s
+
+        &:hover
+            box-shadow: 0 0 30px 5px $cntnr-txt-clr
+            transition: .3s
+
+        &-img
+
+            @include cntnr-img-sz
+            animation: crdRot 1s infinite
+            transition: .3s
+            &:hover
+                transform: scale(1.05)
+                
+                transition: .3s
+                box-shadow: 0 0 50px 30px $cntnr-txt-clr
+                filter: contrast(500%)
+            
+            @keyframes crdRot
+                0%
+                    transform: scale(1)
+
+                50%
+                    transform: scale(1.01)
+                    
+                100%
+                    transform: scale(1)
+                    
+              
+
+        &-txt
+
+            padding: 1rem
+            color: $cntnr-txt-clr
+            font-size: 1.5rem
+            font-weight: bolder
+
+        &-dsc
+
+            color: $cntnr-dsc-clr
+            padding: 1rem
+            font-size: 1.3rem
+
+.sgntr
+    transition: .3s
+    a
+        text-decoration: none
+        color:$cntnr-txt-clr
+        font-size: 2rem
+        
+    &:hover
+        transform: translateY(5px) scale(1.1)
+        transition: .3s

@@ -1,0 +1,25 @@
+@use './variables'
+
+@mixin flex-center
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+
+@mixin cntnr
+
+    @include flex-center
+    flex-direction: column
+    width: 375px
+    height: auto
+    text-align: center
+    border-radius: 15px
+    background-color: $crd-bg-clr
+
+@mixin cntnr-img-sz
+
+    width: 98%
+    border-radius: 10px
